@@ -10,6 +10,10 @@
       type="text/css"
     />
     <link href="node_modules/video.js/dist/video-js.css" rel="stylesheet" />
+    <link
+      href="node_modules/@s3bubble/videojs-s3bubble-bitrate-switcher/dist/videojs-s3bubble-bitrate-switcher.css"
+      rel="stylesheet"
+    />
     <link href="dist/videojs-s3bubble-settings-menu.css" rel="stylesheet" />
     <style>
       body {
@@ -18,17 +22,7 @@
     </style>
   </head>
   <body>
-    <video id="vp" class="video-js vjs-default-skin vjs-16-9" controls>
-      <source
-        src="https://d3370nekj200fx.cloudfront.net/07c4a641_7b4a_4497_ac07_32a5aabcab6b/master.mpd"
-        type="application/dash+xml"
-      />
-      <track
-        kind="chapters"
-        src="https://s3b-assets-bucket.s3.amazonaws.com/chapters.en.vtt"
-        srclang="en"
-      />
-    </video>
+    <video id="vp" class="video-js vjs-default-skin vjs-16-9" controls></video>
     <ul>
       <li><a id="switch" href="#">SWITCH SOURCE.</a></li>
       <li><a href="/test/debug.html">Run unit tests in browser.</a></li>
@@ -36,7 +30,7 @@
     </ul>
     <script src="node_modules/video.js/dist/video.js"></script>
     <script src="node_modules/videojs-contrib-quality-levels/dist/videojs-contrib-quality-levels.js"></script>
-    <script src="node_modules/@s3bubble/videojs-s3bubble-bitrate-switcher/dist/videojs-s3bubble-bitrate-switcher.min.js"></script>
+    <script src="node_modules/@s3bubble/videojs-s3bubble-bitrate-switcher/dist/videojs-s3bubble-bitrate-switcher.js"></script>
     <script src="dist/videojs-s3bubble-settings-menu.js"></script>
     <script>
       (function (window, videojs) {
@@ -81,6 +75,11 @@
           playbackRates: [0.25, 0.5, 0.75, 1, 1.25, 1.5, 1.75, 2],
           nativeControlsForTouch: false,
         }));
+
+        examplePlayer.src({
+          src: "https://d3370nekj200fx.cloudfront.net/07c4a641_7b4a_4497_ac07_32a5aabcab6b/master.mpd",
+          type: "application/dash+xml",
+        });
 
         document.getElementById("switch").addEventListener("click", (_evt) => {
           examplePlayer.src({

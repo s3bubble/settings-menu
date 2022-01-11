@@ -1,18 +1,18 @@
-.video-js .vjs-settings-menu .vjs-menu {
+.vjs-s3bubble-settings-menu .vjs-settings-menu .vjs-menu {
   width: 230px !important;
   left: -162px !important;
   margin: 0px !important;
   bottom: 43px;
 }
 
-.vjs-menu li.vjs-selected,
-.vjs-menu li.vjs-selected:focus,
-.vjs-menu li.vjs-selected:hover,
-.js-focus-visible .vjs-menu li.vjs-selected:hover {
+.vjs-s3bubble-settings-menu .vjs-menu li.vjs-selected,
+.vjs-s3bubble-settings-menu .vjs-menu li.vjs-selected:focus,
+.vjs-s3bubble-settings-menu .vjs-menu li.vjs-selected:hover,
+.vjs-s3bubble-settings-menu .js-focus-visible .vjs-menu li.vjs-selected:hover {
   background-color: rgb(255 255 255 / 30%);
 }
 
-.video-js .vjs-settings-menu .vjs-menu .vjs-menu-content {
+.vjs-s3bubble-settings-menu .vjs-settings-menu .vjs-menu .vjs-menu-content {
   border: none !important;
   border-radius: 3px !important;
   padding: 0 !important;
@@ -20,7 +20,7 @@
   max-height: 25em !important;
 }
 
-.video-js .vjs-settings-menu .vjs-menu li {
+.vjs-s3bubble-settings-menu .vjs-settings-menu .vjs-menu li {
   display: block !important;
   position: unset !important;
   color: #fff;
@@ -40,7 +40,7 @@
   font-family: inherit !important;
 }
 
-.video-js .vjs-settings-menu .vjs-menu .vjs-menu-content {
+.vjs-s3bubble-settings-menu .vjs-settings-menu .vjs-menu .vjs-menu-content {
   bottom: 0 !important;
 }
 
@@ -48,11 +48,11 @@
   display: none;
 }
 
-.video-js .vjs-settings-menu .vjs-lock-open {
+.vjs-s3bubble-settings-menu .vjs-settings-menu .vjs-lock-open {
   display: block !important;
 }
 
-.video-js
+.vjs-s3bubble-settings-menu
   .vjs-settings-menu
   button.vjs-button
   span.vjs-icon-placeholder:before {
@@ -61,7 +61,7 @@
   transition: transform 0.3s ease;
 }
 
-.video-js
+.vjs-s3bubble-settings-menu
   .vjs-settings-menu.vjs-toogle-btn
   button.vjs-button
   span.vjs-icon-placeholder:before {
@@ -71,12 +71,12 @@
   transform: rotate(90deg);
 }
 
-.video-js .vjs-button .vjs-menu:before,
-.video-js .vjs-button .vjs-menu:after {
+.vjs-s3bubble-settings-menu .vjs-button .vjs-menu:before,
+.vjs-s3bubble-settings-menu .vjs-button .vjs-menu:after {
   display: none !important;
 }
 
-.video-js
+.vjs-s3bubble-settings-menu
   .vjs-menu-button-popup
   .vjs-menu
   .vjs-menu-content
@@ -84,25 +84,25 @@
   text-transform: capitalize !important;
 }
 
-.video-js .vjs-sm-top-level-header {
+.vjs-s3bubble-settings-menu .vjs-sm-top-level-header {
   text-transform: capitalize !important;
   background: #24282d !important;
   text-align: left !important;
   pointer-events: none;
 }
 
-.video-js .setting-menu-header {
+.vjs-s3bubble-settings-menu .setting-menu-header {
   text-transform: capitalize !important;
   background: #24282d !important;
   text-align: left !important;
 }
 
-.video-js .vjs-sm-list-item {
+.vjs-s3bubble-settings-menu .vjs-sm-list-item {
   text-transform: capitalize !important;
   text-align: left !important;
 }
 
-.video-js .vjs-sm-list-item span {
+.vjs-s3bubble-settings-menu .vjs-sm-list-item span {
   float: right !important;
   width: 50% !important;
   white-space: nowrap !important;
@@ -111,7 +111,7 @@
   text-align: right !important;
 }
 
-.video-js .setting-menu-list-arrow {
+.vjs-s3bubble-settings-menu .setting-menu-list-arrow {
   border: solid #fff !important;
   border-width: 0 3px 3px 0 !important;
   display: inline-block !important;
@@ -119,24 +119,24 @@
   margin: 5px !important;
 }
 
-.video-js .setting-menu-list-arrow-right {
+.vjs-s3bubble-settings-menu .setting-menu-list-arrow-right {
   transform: rotate(-45deg) !important;
   -webkit-transform: rotate(-45deg) !important;
   float: right !important;
 }
 
-.video-js .setting-menu-list-arrow-left {
+.vjs-s3bubble-settings-menu .setting-menu-list-arrow-left {
   transform: rotate(135deg) !important;
   -webkit-transform: rotate(135deg) !important;
   float: left !important;
 }
 
-.video-js .vjs-settings-menu .vjs-icon-placeholder:before {
+.vjs-s3bubble-settings-menu .vjs-settings-menu .vjs-icon-placeholder:before {
   font-family: VideoJS !important;
   content: "\f110" !important;
 }
 
-.video-js .vjs-hide-settings-menu-item {
+.vjs-s3bubble-settings-menu .vjs-hide-settings-menu-item {
   display: none !important;
 }
 
@@ -145,11 +145,14 @@
   display: none !important;
 }
 
-.video-js .vjs-settings-menu .vjs-captions-menu-item .vjs-icon-placeholder {
+vj.s-s3bubble-settings-menu
+  .vjs-settings-menu
+  .vjs-captions-menu-item
+  .vjs-icon-placeholder {
   position: relative;
 }
 
-.video-js
+.vjs-s3bubble-settings-menu
   .vjs-settings-menu
   .vjs-captions-menu-item
   .vjs-icon-placeholder:before {
@@ -158,7 +161,7 @@
   vertical-align: bottom !important;
 }
 
-.video-js .vjs-text-track-settings select {
+.vjs-s3bubble-settings-menu .vjs-text-track-settings select {
   background: #fff !important;
   color: #000 !important;
   border: none !important;
